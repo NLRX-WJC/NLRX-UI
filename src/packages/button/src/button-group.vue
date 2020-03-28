@@ -24,7 +24,7 @@ export default {
 .nlrx-button-group {
   display: inline-flex;
   vertical-align: middle;
-  button {
+  .nlrx-button {
     position: relative;
     border-radius: 0;
     &:not(first-child) {
