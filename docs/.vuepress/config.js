@@ -3,7 +3,6 @@ module.exports = {
   title: "NLRX-UI", 
   description: "一个只可亵玩不可生产的Vue组件库", 
   base: "/NLRX-UI/",
-  dest: "dist",
   configureWebpack: {
     resolve: {
       alias: {
