@@ -7,6 +7,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name nlrx-ui ./src/packages/index.js",
+    "test": "karma start",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "commit": "git cz"
