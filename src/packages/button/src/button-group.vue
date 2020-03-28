@@ -8,10 +8,12 @@
 export default {
   name: "NlrxButtonGroup",
   mounted() {
-    // 判断子组件是否为button组件
-    let children = this.$el.children;
-    for (let i = 0; i < children.length; i++) {
-      console.assert(children[i].tagName === "BUTTON", "子元素必须是button");
+    // 判断子组件是否为nlrx-button组件
+    for (let node of this.$el.children) {
+      let name = node.nodeName.toLowerCase()
+      if (name !== 'button') {
+        console.warn(`nlrx-button-group 的子元素应该全是 nlrx-button，但是你写的是 ${name}`)
+      }
     }
   }
 };
