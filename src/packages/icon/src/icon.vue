@@ -19,8 +19,8 @@ export default {
 
 <style lang="scss">
 .nlrx-icon {
-  width: 25px;
-  height: 25px;
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 </style>

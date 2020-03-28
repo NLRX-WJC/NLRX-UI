@@ -10,7 +10,7 @@
     <!-- loading 的icon -->
     <nlrx-icon icon="loading" v-if="loading" class="loading icon"></nlrx-icon>
     <!-- 文本内容 -->
-    <span v-if="this.$slots.default">
+    <span v-if="this.$slots.default" class="content">
       <slot></slot>
     </span>
   </button>
@@ -94,6 +94,7 @@ $active-color: #3a8ee6;
   padding: 0 1em;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   vertical-align: middle;
   user-select: none;
   &:hover {
@@ -157,27 +158,23 @@ $active-color: #3a8ee6;
       color: #fff;
     }
   }
-  .icon {
-    width: 16px;
-    height: 16px;
-  }
-  .icon + span {
-    margin-left: 4px;
-  }
 
   &-left {
-    svg {
+    .icon {
       order: 1;
+      margin-right: .1em;
     }
-    span {
+    .content {
       order: 2;
     }
   }
   &-right {
-    svg {
+    .icon {
       order: 2;
+      margin-right: 0;
+      margin-left: .1em;
     }
-    span {
+    .content {
       order: 1;
     }
     .icon + span {

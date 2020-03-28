@@ -12,6 +12,7 @@
     <br>
     <!-- 带icon的按钮 -->
     <nlrx-button type="info" icon="sousuo">信息按钮</nlrx-button>
+    <nlrx-button type="info" position="right" icon="sousuo">信息按钮</nlrx-button>
     <nlrx-button type="primary" icon="sousuo"></nlrx-button>
     <nlrx-button type="success" icon="sousuo" icon-position="right">内容</nlrx-button>
     <br>
