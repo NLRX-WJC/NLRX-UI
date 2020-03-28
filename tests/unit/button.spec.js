@@ -58,7 +58,7 @@ describe("button", () => {
         icon: "edit"
       }
     });
-    let ele = wrapper.vm.$el.querySelector("span");
+    let ele = wrapper.vm.$el.querySelector(".content");
     expect(getComputedStyle(ele).order).to.eq("2");
     wrapper.setProps({ position: "right" }); // 设置props 必须要在下一个事件环去取值
     return wrapper.vm.$nextTick().then(() => {
