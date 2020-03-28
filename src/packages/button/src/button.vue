@@ -162,7 +162,7 @@ $active-color: #3a8ee6;
   &-left {
     .icon {
       order: 1;
-      margin-right: .1em;
+      margin-right: .5em;
     }
     .content {
       order: 2;
@@ -171,15 +171,10 @@ $active-color: #3a8ee6;
   &-right {
     .icon {
       order: 2;
-      margin-right: 0;
-      margin-left: .1em;
+      margin-left: .5em;
     }
     .content {
       order: 1;
-    }
-    .icon + span {
-      margin-left: 0px;
-      margin-right: 4px;
     }
   }
   &[disabled] {
