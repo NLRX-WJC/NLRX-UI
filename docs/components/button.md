@@ -12,7 +12,7 @@
 :::
 
 使用 `type` 属性来定义 Button 的样式。
-::: slot highlight
+::: slot sourceCode
 
 ```html
 <div>
@@ -39,7 +39,7 @@
 :::
 
 你可以使用 `disabled` 属性来定义按钮是否可用，它接受一个 `Boolean` 值。
-::: slot highlight
+::: slot sourceCode
 
 ```html
 <div>
@@ -67,12 +67,22 @@
 
 设置 `icon` 属性即可，也可以使用 `position` 属性来定义 `icon`在 Button 中的位置
 
-::: slot highlight
+::: slot sourceCode
 
 ```html
 <div>
-  <nlrx-button type="primary" position="left" icon="edit">编辑(图标在左)</nlrx-button>
-  <nlrx-button type="primary" position="right" icon="edit">编辑(图标在右)</nlrx-button>
+  <nlrx-button 
+    type="primary" 
+    position="left" 
+    icon="edit">
+    编辑(图标在左)
+  </nlrx-button>
+  <nlrx-button 
+    type="primary" 
+    position="right" 
+    icon="edit">
+    编辑(图标在右)
+  </nlrx-button>
   <nlrx-button type="primary" icon="edit"></nlrx-button>
 </div>
 ```
@@ -91,7 +101,7 @@
 
 要设置为 loading 状态，只要设置 loading 属性为 true 即可。
 
-::: slot highlight
+::: slot sourceCode
 
 ```html
 <nlrx-button type="primary" :loading="true">加载中</nlrx-button>
@@ -111,7 +121,7 @@
 
 使用`<nlrx-button-group>`标签来嵌套你的按钮。
 
-::: slot highlight
+::: slot sourceCode
 
 ```html
 <nlrx-button-group>

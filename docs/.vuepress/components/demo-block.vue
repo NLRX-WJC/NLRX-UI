@@ -11,8 +11,8 @@
       <div class="description" v-if="$slots.default">
         <slot></slot>
       </div>
-      <div class="highlight ">
-        <slot name="highlight"></slot>
+      <div class="sourceCode">
+        <slot name="sourceCode"></slot>
       </div>
     </div>
     <div
@@ -88,9 +88,9 @@
           
         if (this.$el.getElementsByClassName('description').length > 0) {
          return this.$el.getElementsByClassName('description')[0].clientHeight +
-            this.$el.getElementsByClassName('highlight')[0].clientHeight + 20;
+            this.$el.getElementsByClassName('sourceCode')[0].clientHeight + 20;
         }
-        return this.$el.getElementsByClassName('highlight')[0].clientHeight;
+        return this.$el.getElementsByClassName('sourceCode')[0].clientHeight;
       }
     },
 
@@ -113,10 +113,10 @@
 
     mounted() {
       this.$nextTick(() => {
-        let highlight = this.$el.getElementsByClassName('highlight')[0];
+        let sourceCode = this.$el.getElementsByClassName('sourceCode')[0];
         if (this.$el.getElementsByClassName('description').length === 0) {
-          highlight.style.width = '100%';
-          highlight.borderRight = 'none';
+          sourceCode.style.width = '100%';
+          sourceCode.borderRight = 'none';
         }
       });
     },
@@ -186,7 +186,7 @@
       }
     }
 
-    .highlight {
+    .sourceCode {
       pre {
         margin: 0;
       }
