@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Button</h1>
     <!-- 默认按钮 -->
     <nlrx-button>默认按钮</nlrx-button>
     <br>
@@ -31,15 +32,30 @@
     <nlrx-icon icon="sousuo"></nlrx-icon>
     <nlrx-icon icon="edit"></nlrx-icon>
     <br>
+    <hr>
+    <h1>Input</h1>
+    <nlrx-input></nlrx-input>
+    <nlrx-input disabled></nlrx-input>
+    <nlrx-input readonly></nlrx-input>
+    <nlrx-input v-model="msg" show-password></nlrx-input>
+    <nlrx-input v-model="msg" clearable @clear="fn"></nlrx-input>
+    <nlrx-input v-model="msg" @change="fn"></nlrx-input>
+    <nlrx-input prefixIcon="edit"></nlrx-input>
+    <nlrx-input suffixIcon="edit"></nlrx-input>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+  data () {
+    return {
+      msg:""
+    }
+  },
   methods:{
     fn(e){
-      console.log(e)
+      console.log(111111)
     }
   }
 }

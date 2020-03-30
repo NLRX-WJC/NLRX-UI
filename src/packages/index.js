@@ -1,15 +1,16 @@
 // 所有的组件的入口
-import Button from './button';
-import Icon from './icon';
-import ButtonGroup from './button-group';
+import Button from "./button";
+import Icon from "./icon";
+import ButtonGroup from "./button-group";
+import Input from "./input";
 
 const COMPONENTS = [
   Button,
   Icon,
   ButtonGroup,
-]
+  Input
+];
 const install = Vue => {
-
   COMPONENTS.forEach(component => {
     Vue.component(component.name, component);
   });
