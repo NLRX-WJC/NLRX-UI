@@ -62,7 +62,6 @@ describe("button", () => {
     expect(getComputedStyle(ele).order).to.eq("2");
     wrapper.setProps({ position: "right" }); // 设置props 必须要在下一个事件环去取值
     return wrapper.vm.$nextTick().then(() => {
-      console.log(getComputedStyle(ele).order);
       expect(getComputedStyle(ele).order).to.eq("1");
     });
   });
