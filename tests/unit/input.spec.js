@@ -23,8 +23,7 @@ describe("input", () => {
       }
     });
     expect(wrapper.find("input").attributes("disabled")).to.eq("disabled");
-  });
-  
+  }); 
   it("4.测试input的readonly状态", () => {
     const wrapper = shallowMount(Input, {
       propsData: {
@@ -40,5 +39,31 @@ describe("input", () => {
       }
     });
     expect(wrapper.find("input").attributes("placeholder")).to.eq("难凉热血");
+  });
+  it("6.测试input的prefixIcon", () => {
+    const wrapper = shallowMount(Input, {
+      stubs: {
+        "nlrx-icon": Icon // 替换的功能
+      },
+      propsData: {
+        prefixIcon: "edit"
+      }
+    });
+    let iconEle = wrapper.vm.$el.querySelector("use")
+    expect(iconEle.getAttribute("xlink:href")).to.eq("#icon-edit");
+  });
+  it("7.测试input的suffixIcon", () => {
+    const wrapper = shallowMount(Input, {
+      stubs: {
+        "nlrx-icon": Icon // 替换的功能
+      },
+      propsData: {
+        suffixIcon: "edit"
+      }
+    });
+    expect(wrapper.find("use").attributes("href")).to.eq("#icon-edit");
+  });
+  it("8.测试input的clearable", () => {
+    
   });
 });

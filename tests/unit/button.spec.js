@@ -16,7 +16,7 @@ describe("button", () => {
   it("2.测试icon正常显示", () => {
     const wrapper = shallowMount(Button, {
       stubs: {
-        "nlrx-icon": Icon // 替换的功能
+        "nlrx-icon": Icon 
       },
       propsData: {
         icon: "edit"
@@ -27,7 +27,7 @@ describe("button", () => {
   it("3.测试loading时 按钮是禁用状态", () => {
     const wrapper = shallowMount(Button, {
       stubs: {
-        "nlrx-icon": Icon // 替换的功能
+        "nlrx-icon": Icon 
       },
       propsData: {
         loading: true
@@ -44,11 +44,10 @@ describe("button", () => {
     expect(wrapper.emitted("click").length).to.eq(1);
   });
   it("5.按钮传入position是否正常显示", () => {
-    // 测试样式
     const wrapper = shallowMount(Button, {
       attachToDocument: true, // 将组件挂载到浏览器上
       stubs: {
-        "nlrx-icon": Icon // 替换的功能
+        "nlrx-icon": Icon 
       },
       slots: {
         default: "难凉热血"
