@@ -1,9 +1,9 @@
 $border-radius: 4px;
 
-$primary: #409EFF;
-$success: #67C23A;
-$warning: #E6A23C;
-$danger: #F56C6C;
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
 $info: #909399;
 
 $primary-hover: #66b1ff;
@@ -17,15 +17,52 @@ $success-active: #5daf34;
 $warning-active: #cf9236;
 $danger-active: #dd6161;
 $info-active: #82848a;
+
+// 响应式
+$xs: 768px-1;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1920px;
+
+$map: (
+  "xs": (
+    max-width: $xs
+  ),
+  "sm": (
+    min-width: $sm
+  ),
+  "md": (
+    min-width: $md
+  ),
+  "lg": (
+    min-width: $lg
+  ),
+  "xl": (
+    min-width: $xl
+  )
+);
+
+@mixin res($key) {
+  @media only screen and #{inspect(map-get($map,$key))} {
+    @content;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@mixin spin {
+  animation: spin 2s infinite linear;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@mixin spin {
-  animation: spin 2s infinite linear;
 }

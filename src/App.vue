@@ -44,7 +44,7 @@
     <nlrx-input suffixIcon="edit"></nlrx-input>
     <hr>
     <h1>栅格系统</h1>
-    <div style="width:1000px;border:1px solid green;margin:0 auto">
+    <div style="">
       <nlrx-row>
         <nlrx-col :span="12"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
         <nlrx-col :span="12"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
@@ -89,6 +89,13 @@
       <nlrx-row :gutter="20">
         <nlrx-col :span="4"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
         <nlrx-col :span="20"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
+
+      <nlrx-row>
+        <nlrx-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
       </nlrx-row>
     </div>
   </div>
