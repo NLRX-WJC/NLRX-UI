@@ -3,12 +3,16 @@ import Button from "./button";
 import Icon from "./icon";
 import ButtonGroup from "./button-group";
 import Input from "./input";
+import Row from "./row";
+import Col from "./col";
 
 const COMPONENTS = [
   Button,
   Icon,
   ButtonGroup,
-  Input
+  Input,
+  Row,
+  Col,
 ];
 const install = Vue => {
   COMPONENTS.forEach(component => {
