@@ -97,6 +97,32 @@
         <nlrx-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
         <nlrx-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
       </nlrx-row>
+
+      <nlrx-row type="flex" class="row-bg" justify="start">
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
+      <nlrx-row type="flex" class="row-bg" justify="center">
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
+      <nlrx-row type="flex" class="row-bg" justify="end">
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
+      <nlrx-row type="flex" class="row-bg" justify="space-between">
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
+      <nlrx-row type="flex" class="row-bg" justify="space-around">
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+        <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
+      </nlrx-row>
     </div>
   </div>
 </template>
