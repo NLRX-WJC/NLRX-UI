@@ -190,14 +190,4 @@ export default {
     text-align: center;
     line-height: 160px;
   }
-  
-  body > .nlrx-container {
-    margin-bottom: 40px;
-  }
-  
-  .nlrx-container:nth-child(5) .nlrx-aside,
-  .nlrx-container:nth-child(6) .nlrx-aside {
-    line-height: 260px;
-  }
-
 </style>

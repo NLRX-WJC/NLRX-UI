@@ -47,6 +47,7 @@ module.exports = {
           ['/components/button','Button 按钮'],
           ['/components/input','Input 输入框'],
           ['/components/layout','Layout 布局'],
+          ['/components/container','Container 布局容器'],
         ]
       }
     ]
