@@ -124,6 +124,33 @@
         <nlrx-col :span="6"><div style="height:100px;background:grey;border:1px solid red"></div></nlrx-col>
       </nlrx-row>
     </div>
+    <h1>Container 布局容器</h1>
+    <div>
+      <nlrx-container>
+        <nlrx-header>Header</nlrx-header>
+        <nlrx-main>Main</nlrx-main>
+        <nlrx-footer>footer</nlrx-footer>
+      </nlrx-container>
+      <hr>
+      <nlrx-container>
+        <nlrx-header>Header</nlrx-header>
+        <nlrx-container>
+          <nlrx-aside >aside </nlrx-aside >
+          <nlrx-main>Main</nlrx-main>
+        </nlrx-container>
+        <nlrx-footer>footer</nlrx-footer>
+      </nlrx-container>
+
+      <nlrx-container>
+        <nlrx-aside width="100px">aside </nlrx-aside >
+        <nlrx-container>
+          <nlrx-header height="100px">header</nlrx-header >
+          <nlrx-main>Main</nlrx-main>
+          <nlrx-footer height="100px">footer</nlrx-footer>
+        </nlrx-container>
+        
+      </nlrx-container>
+    </div>
   </div>
 </template>
 
@@ -142,3 +169,35 @@ export default {
   }
 }
 </script>
+<style>
+.nlrx-header, .nlrx-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  .nlrx-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+  }
+  
+  .nlrx-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
+  
+  body > .nlrx-container {
+    margin-bottom: 40px;
+  }
+  
+  .nlrx-container:nth-child(5) .nlrx-aside,
+  .nlrx-container:nth-child(6) .nlrx-aside {
+    line-height: 260px;
+  }
+
+</style>

@@ -5,6 +5,11 @@ import ButtonGroup from "./button-group";
 import Input from "./input";
 import Row from "./row";
 import Col from "./col";
+import Container from "./container";
+import Header from "./header";
+import Aside from "./aside";
+import Footer from "./footer";
+import Main from "./main";
 
 const COMPONENTS = [
   Button,
@@ -13,7 +18,13 @@ const COMPONENTS = [
   Input,
   Row,
   Col,
+  Container,
+  Header,
+  Aside,
+  Footer,
+  Main,
 ];
+
 const install = Vue => {
   COMPONENTS.forEach(component => {
     Vue.component(component.name, component);
