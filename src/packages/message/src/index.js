@@ -1,11 +1,20 @@
-import Vue from 'vue';
-import Message from './message';
+import Vue from "vue";
+import Message from "./message";
 
 let MessageConstructor = Vue.extend(Message);
+let instance;
+const message = function(options = {}) {
+  if (typeof options === "string") {
+    options = {
+      message: options
+    };
+  }
 
-const message = function () {
-  let instance = new MessageConstructor();
+  instance = new MessageConstructor({
+    data: options
+  });
   instance.$mount();
   document.body.appendChild(instance.$el);
-}
-export default message
+  instance.visible = true;
+};
+export default message;

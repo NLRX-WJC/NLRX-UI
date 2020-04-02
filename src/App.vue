@@ -164,7 +164,13 @@ export default {
   },
   methods:{
     fn(e){
-      this.$message()
+      this.$message({
+        dangerouslyUseHTMLString:true,
+        message:'<h1>nlrx</h1>',
+        type:'info',
+        center:true,
+        onClose:()=>{alert(111)}
+      })
     },
 
   }
