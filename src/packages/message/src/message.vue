@@ -125,7 +125,7 @@ $message-danger-font-color: $danger !default;
   padding: 15px 15px 15px 20px;
   display: flex;
   align-items: center;
-
+  z-index: 21;
   @mixin m($type) {
     @content;
   }

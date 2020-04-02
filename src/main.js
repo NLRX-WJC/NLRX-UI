@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-// 引入我们的组件库
+// 引入组件库
 import NlrxUI from './packages'
 Vue.use(NlrxUI);
 
