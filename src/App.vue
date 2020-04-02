@@ -164,8 +164,9 @@ export default {
   },
   methods:{
     fn(e){
-      console.log(111111)
-    }
+      this.$message()
+    },
+
   }
 }
 </script>
