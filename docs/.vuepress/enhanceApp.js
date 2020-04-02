@@ -1,3 +1,4 @@
 import Vue from 'vue'
-import NlrxUI from '../../src/packages'
-Vue.use(NlrxUI);
+import('../../src/packages').then(NlrxUI => {
+  Vue.use(NlrxUI);
+})
