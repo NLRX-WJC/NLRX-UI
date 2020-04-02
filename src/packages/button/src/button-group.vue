@@ -25,10 +25,16 @@ export default {
   display: inline-flex;
   vertical-align: middle;
   .nlrx-button {
-    position: relative;
     border-radius: 0;
     &:not(first-child) {
       margin-left: -1px;
+    }
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    &.nlrx-button-primary:last-child:not(:first-child),
+    &.nlrx-button-primary + .nlrx-button-primary {
+      border-left-color: hsla(0,0%,100%,.5);
     }
     &:first-child {
       border-top-left-radius: $border-radius;
@@ -40,9 +46,6 @@ export default {
     }
     &:hover {
       z-index: 1;
-    }
-    &:focus {
-      z-index: 2;
     }
   }
 }
