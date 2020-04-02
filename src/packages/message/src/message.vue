@@ -4,14 +4,16 @@
       :class="['nlrx-message', messageClasses]"
       v-show="visible"
       @mouseenter="clearTimer"
-      @mouseleave="startTimer"
-    >
+      @mouseleave="startTimer">
       <slot>
         <p v-if="!dangerouslyUseHTMLString" class="nlrx-message-content">
           {{ message }}
         </p>
         <p v-else v-html="message" class="nlrx-message-content"></p>
       </slot>
+      <span v-if="showClose" class="closeBtn" @click="close">
+        {{closeButtonText}}
+      </span>
     </div>
   </transition>
 </template>
@@ -28,7 +30,9 @@ export default {
       timer: null, // 定时器，用于自动关闭message框
       dangerouslyUseHTMLString: false,
       center: false,
-      onClose: null
+      onClose: null,
+      showClose:false,
+      closeButtonText:'关闭'
     };
   },
   computed: {
@@ -159,7 +163,6 @@ $message-danger-font-color: $danger !default;
     &.nlrx-message-error-content {
       background-color: $color-danger-lighter;
       border-color: $color-danger-light;
-
       .nlrx-message-content {
         color: $message-danger-font-color;
       }
@@ -167,6 +170,17 @@ $message-danger-font-color: $danger !default;
   }
   &.center {
     justify-content: center;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: $message-info-font-color;
+    &:focus {
+      outline-width: 0;
+    }
   }
 }
 .nlrx-message-fade-enter,

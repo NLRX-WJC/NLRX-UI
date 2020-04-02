@@ -167,9 +167,11 @@ export default {
       this.$message({
         dangerouslyUseHTMLString:true,
         message:'<h1>nlrx</h1>',
-        type:'info',
+        type:'success',
         center:true,
-        onClose:()=>{alert(111)}
+        onClose:()=>{console.log('1111')},
+        showClose:true,
+        closeButtonText:'11111111'
       })
     },
 
