@@ -49,6 +49,7 @@ module.exports = {
           ['/components/layout','Layout 布局'],
           ['/components/container','Container 布局容器'],
           ['/components/message','Message 消息提示'],
+          ['/components/progress','Progress 进度条'],
         ]
       }
     ]

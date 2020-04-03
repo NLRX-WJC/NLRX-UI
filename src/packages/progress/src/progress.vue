@@ -37,7 +37,7 @@ export default {
     },
     showText: {
       type: Boolean,
-      default: true
+      default: false
     }
   }
 };
@@ -48,6 +48,7 @@ export default {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
+  line-height: 1;
   .outer {
     border-radius: 100px;
     background: #ebeef5;
@@ -63,11 +64,12 @@ export default {
       text-align: right;
       white-space: nowrap;
       transition: width 0.6s ease;
+      line-height: 1;
       .text-inside {
-        color: #fff;
-        font-size: 12px;
         display: inline-block;
         vertical-align: middle;
+        color: #fff;
+        font-size: 12px;
         margin: 0 8px;
       }
     }
