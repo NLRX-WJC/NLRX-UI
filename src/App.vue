@@ -140,7 +140,6 @@
         </nlrx-container>
         <nlrx-footer>footer</nlrx-footer>
       </nlrx-container>
-
       <nlrx-container>
         <nlrx-aside width="100px">aside </nlrx-aside >
         <nlrx-container>
@@ -148,8 +147,13 @@
           <nlrx-main>Main</nlrx-main>
           <nlrx-footer height="100px">footer</nlrx-footer>
         </nlrx-container>
-        
       </nlrx-container>
+    </div>
+    <h1>进度条Progress</h1>
+    <div>
+      <nlrx-progress :percentage="percentage" color="#520520"></nlrx-progress>
+      <nlrx-button @click="increase">加</nlrx-button>
+      <nlrx-button @click="decrease">减</nlrx-button>
     </div>
   </div>
 </template>
@@ -159,10 +163,23 @@ export default {
   name: 'App',
   data () {
     return {
-      msg:""
+      msg:"",
+      percentage:20
     }
   },
   methods:{
+    increase() {
+      this.percentage += 10;
+      if (this.percentage > 100) {
+        this.percentage = 100;
+      }
+    },
+    decrease() {
+      this.percentage -= 10;
+      if (this.percentage < 0) {
+        this.percentage = 0;
+      }
+    },
     fn(e){
       this.$message({
         dangerouslyUseHTMLString:true,

@@ -11,6 +11,7 @@ import Aside from "./aside";
 import Footer from "./footer";
 import Main from "./main";
 import Message from "./message";
+import Progress from "./progress";
 
 const COMPONENTS = [
   Button,
@@ -24,6 +25,7 @@ const COMPONENTS = [
   Aside,
   Footer,
   Main,
+  Progress
 ];
 
 const install = Vue => {
