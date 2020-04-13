@@ -50,6 +50,7 @@ module.exports = {
           ['/components/container','Container 布局容器'],
           ['/components/message','Message 消息提示'],
           ['/components/progress','Progress 进度条'],
+          ['/components/carousel','Carousel 走马灯'],
         ]
       }
     ]
