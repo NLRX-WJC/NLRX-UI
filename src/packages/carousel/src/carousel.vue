@@ -52,7 +52,7 @@ export default {
     },
     arrow:{
       typr: String,
-      default: "always"
+      default: "hover"
     }
   },
   computed:{
@@ -99,7 +99,7 @@ export default {
       if (this.autoplay) {
         this.timer = setInterval(() => {
           let index = this.currentSelected;
-          let newIndex = index - 1
+          let newIndex = index + 1
           this.select(newIndex)
         }, this.interval);
       }
