@@ -12,6 +12,8 @@ import Footer from "./footer";
 import Main from "./main";
 import Message from "./message";
 import Progress from "./progress";
+import Carousel from "./carousel";
+import CarouselItem from "./carousel-item";
 
 const COMPONENTS = [
   Button,
@@ -25,7 +27,9 @@ const COMPONENTS = [
   Aside,
   Footer,
   Main,
-  Progress
+  Progress,
+  Carousel,
+  CarouselItem
 ];
 
 const install = Vue => {

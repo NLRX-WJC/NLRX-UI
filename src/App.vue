@@ -155,6 +155,26 @@
       <nlrx-button @click="increase">加</nlrx-button>
       <nlrx-button @click="decrease">减</nlrx-button>
     </div>
+    <h1>轮播图carousel</h1>
+    <div style="width:500px;margin:0 auto">
+      <nlrx-carousel>
+        <nlrx-carousel-item>
+          <div class="carousel-content" style="background-color:red">
+            <h1>1</h1>
+          </div>
+        </nlrx-carousel-item>
+        <nlrx-carousel-item>
+          <div class="carousel-content" style="background-color:blue" >
+            <h1>2</h1>
+          </div>
+        </nlrx-carousel-item>
+        <nlrx-carousel-item>
+          <div class="carousel-content" style="background-color:yellow">
+            <h1>3</h1>
+          </div>
+        </nlrx-carousel-item>
+      </nlrx-carousel>
+    </div>
   </div>
 </template>
 
@@ -215,5 +235,12 @@ export default {
     color: #333;
     text-align: center;
     line-height: 160px;
+  }
+</style>
+<style>
+  .carousel-content {
+    height:300px;
+    text-align: center;
+    line-height: 300px;
   }
 </style>
